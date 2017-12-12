@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>layout</title>
+    <link rel="stylesheet" href="layout.css">
+    <style>
+      *{margin:0;padding:0;}
+      li{list-style-type:none;}
+      a{text-decoration: none;color:#fff;}
+      p{margin-bottom:20px;}
+
+      body{
+          background:rgba(223, 110, 110, 0.83);
+          background-image: url(https://3hsyn13u3q9dhgyrg2qh3tin-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/SplitShire-08662.jpg);
+          background-repeat: no-repeat;
+          background-size: cover; /* 백그라운드의 사이즈 지정 */
+          background-attachment: fixed;
+
+      }
+
+      .center{width:1000px; margin:0 auto;}
+
+      /* 머리글 */
+      header{background: rgba(223, 110, 110, 0.83);}
+      header h1{text-align: center;padding:30px 0;}
+
+      /* 본문 */
+      section{background:rgba(255, 255, 255, 0.5); overflow: hidden;
+      }
+
+      nav{float: left;width:200px;}
+      nav li a{display:block; color:#000; border-bottom:2px solid #000; padding:20px;}
+      nav li a:hover{background: #c96666;}
+
+      article{float: left;width:800px;}
+      article .wrap{padding:20px;}
+
+      caption{
+        font-size: 35px;
+        color: #000;
+        text-align: left;
+      }
+
+      table{
+        background-color: rgba(255, 255, 255, 0.42);
+        border-style: none;
+        color: #000;
+        padding: 80px;
+        margin: auto;
+      }
+
+      p{padding: 10px;}
+
+      form{background-color: rgba(255, 255, 255, 0.42);}
+
+      /* 바닥글 */
+      footer{clear:left; background:rgba(51, 51, 51, 0.8);color:#fff;text-align: center;padding:30px 0;}
+    </style>
+  </head>
+  <body>
+    <div class="center">
+        <header>
+            <h1>CHRISTMAS MARKET</h1>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">vlog</a></li>
+                    <li><a href="#">photo</a></li>
+                    <li><a href="#">etc</a></li>
+                </ul>
+            </nav>
+            <div class="wrap">
+            <table>
+              <caption>notice</caption>
+              <tr>
+                <th style="cursor:pointer">공지사항입니다.　</th>
+                <th style="cursor:pointer">공지사항입니다.　</th>
+                <th style="cursor:pointer">공지사항입니다.　</th>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <article>
+          <div id="wrap">
+            <p>One dollar and eighty-seven cents. That was all. And sixty cents of it was in pennies. Pennies saved one and two at a time by bulldozing the grocer and the vegetable man and the butcher until one's cheeks burned with the silent imputation of parsimony that such close dealing implied. Three times Della counted it. One dollar and eighty-seven cents. And the next day would be Christmas.
+
+There was clearly nothing to do but flop down on the shabby little couch and howl. So Della did it. Which instigates the moral reflection that life is made up of sobs, sniffles, and smiles, with sniffles predominating.</p>
+            <p>While the mistress of the home is gradually subsiding from the first stage to the second, take a look at the home. A furnished flat at $8 per week. It did not exactly beggar description, but it certainly had that word on the lookout for the mendicancy squad.
+
+In the vestibule below was a letter-box into which no letter would go, and an electric button from which no mortal finger could coax a ring. Also appertaining thereunto was a card bearing the name 'Mr. James Dillingham Young.'</p>
+          </div>
+
+          <form action="데이터를 전달할 곳" method="get 또는 post">
+            <fieldset>
+              <legend>회원가입</legend>
+              <div class="rowgroup">
+                <div class="row">
+                  <label for="idval">아이디</label>
+                  <input type="text" id="idval" placeholder="아이디를 입력하세요.">
+                </div>
+                <div class="row">
+                  <label for="pw">비밀번호</label>
+                  <input type="password" id="pw">
+                </div>
+              </div>
+            </fieldset>
+          </form>
+
+
+        <table>
+          <caption>photo gallery</caption>
+          <tr>
+            <td><img src="https://placeholdit.co//i/300x250" alt="300x250이미지"></td>
+            <td><img src="https://placeholdit.co//i/300x250" alt="300x250이미지"></td>
+            <td><img src="https://placeholdit.co//i/300x250" alt="300x250이미지"></td>
+          </tr>
+        </table>
+
+        </article>
+
+
+      <footer>
+        Copyright &copy; All rights reserved.
+      </footer>
+  </body>
+</html>
